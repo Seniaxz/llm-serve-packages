@@ -1,0 +1,3 @@
+catalog/index.json -text
+catalog/index.sig -text
+public-key.json -text
