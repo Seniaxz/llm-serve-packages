@@ -2,9 +2,9 @@
 
 Official distribution metadata and extension artifacts. The llm_serve Core repository remains private and is not mirrored here.
 
-## Initial evaluation release
+## Evaluation releases
 
-`playground-1.6.0` is a standalone first-party UI package for the llm_serve plugin host API 1. It contains only `plugin.json` and `ui.html`; it does not contain the Core program, model weights, accounts, credentials, databases, test fixtures, or SDK/CUDA libraries. Package Manager integration is under development; this release is an evaluation artifact, not a claim of completed end-to-end qualification.
+`playground-1.6.0` and `benchmarking-1.6.0` are standalone first-party UI packages for the llm_serve plugin host API 1. Each contains only `plugin.json` and `ui.html`; neither contains the Core program, model weights, accounts, credentials, databases, test fixtures, or SDK/CUDA libraries. Package Manager integration is under development; these are evaluation artifacts, not a claim of independent QA approval. Playground's anonymous signed GitHub catalog download, installation, activation and disable have been exercised through the actual Package Manager UI without rebuilding Core or the main UI during installation.
 
 The package embeds the license texts and version inventory of its bundled third-party dependencies in the `third-party-notices` JSON element in `ui.html`. The npm distribution of react-remove-scroll-bar 2.3.8 omits its LICENSE file; its MIT declaration is accompanied by the copyright holder's repository license pinned to commit 8ca9ba5ea52de03308fe8ced94f7b159a44d28ff, with that provenance retained in the notice.
 
