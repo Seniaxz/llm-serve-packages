@@ -1,10 +1,14 @@
 # llm_serve extension packages
 
-Official distribution metadata and extension artifacts. The llm_serve Core repository remains private and is not mirrored here.
+This is the official signed distribution repository for first-party llm_serve plugins and engine packages, including betas. User-created plugins are not accepted in this repository. Community plugins will have a separate repository. The llm_serve Core source is hosted in its private repository.
 
-## Evaluation releases
+## Dansk
 
-`playground-1.6.0` and `benchmarking-1.6.0` are standalone first-party UI packages for the llm_serve plugin host API 1. Each contains only `plugin.json` and `ui.html`; neither contains the Core program, model weights, accounts, credentials, databases, test fixtures, or SDK/CUDA libraries. Package Manager integration is under development; these are evaluation artifacts, not a claim of independent QA approval. Playground's anonymous signed GitHub catalog download, installation, activation and disable have been exercised through the actual Package Manager UI without rebuilding Core or the main UI during installation.
+Dette er det officielle signerede katalog for llm_serve-førstepartsplugins og enginepakker, inklusive betaer. Brugerbyggede plugins må ikke indsendes eller udgives her. De får et særskilt community-repo.
+
+## Initial evaluation releases
+
+`playground-1.6.0` and `benchmarking-1.6.0` are standalone first-party UI packages for the llm_serve plugin host API 1. Each contains only `plugin.json` and `ui.html`; neither contains the Core program, model weights, accounts, credentials, databases, test fixtures, or SDK/CUDA libraries. The initial artifacts were distributed as evaluation releases. Playground's anonymous signed GitHub catalog download, installation, activation and disable have been exercised through the actual Package Manager UI without rebuilding Core or the main UI during installation.
 
 The package embeds the license texts and version inventory of its bundled third-party dependencies in the `third-party-notices` JSON element in `ui.html`. The npm distribution of react-remove-scroll-bar 2.3.8 omits its LICENSE file; its MIT declaration is accompanied by the copyright holder's repository license pinned to commit 8ca9ba5ea52de03308fe8ced94f7b159a44d28ff, with that provenance retained in the notice.
 
